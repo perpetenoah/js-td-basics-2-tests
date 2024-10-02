@@ -73,3 +73,79 @@
 // c) s'il pleut, affichez "Sortez en blouson."
 // d) s'il neige, affichez "Restez au chaud à la maison."
 // e) dans tous les autres cas (si la personne n'a
+
+
+console.log(true&&false); //false
+console.log(true&&true); //true
+console.log(false&&true); //false
+console.log(false&&false); //false
+
+const number1=parseInt(prompt("Donnes moi un nombre"));
+
+
+if (number1<100 && number1>0){
+
+} else {
+    console.log(`${number1} est en dehors de l'intervalle [0, 100]`);
+}
+
+
+
+//const number2=parseInt(prompt("Donnes moi un nombre"));
+
+console.log(true||false); //true
+console.log(true||true); //true
+console.log(false||true); //true
+console.log(false||false); //false
+
+if (number1>100 || number1<0){
+    console.log(`${number1} est en dehors de l'intervalle [0, 100]`);
+}
+
+
+console.log(!true); //false
+console.log(!false); //true
+
+//const number3=parseInt(prompt("Donnes moi un nombre"));
+
+if (!(number1>100)){
+    console.log(`${number1} est inférieur ou égal à 100`);
+}
+
+if (number1>0){
+    console.log(`${number1} est positif`);
+} else if (number1<0) {
+    console.log(`${number1} est négatif`);
+} else {
+    console.log(`${number1} est nul`);
+}
+
+const name="Noah";
+const age=22;
+
+if (age<13){
+    console.log(`${name} est un petit garçon`);
+} else if (age>=13 && age<20) {
+    console.log(`${name} est un adolescent`);
+} else if (age>=20 && age<30) {
+    console.log(`${name} est un jeune homme`);
+} else {
+    console.log(`${name} est un homme`);
+}
+
+
+
+
+let  meteo=prompt("Quel temps fait-il dehors ? Répondez par un des quatre mots suivants : soleil, vent, pluie ou neige.");
+
+if (meteo==="soleil") {
+    console.log("Sortez en t-shirt.");
+} else if (meteo==="vent") {
+    console.log("Sortez en pull.");
+} else if (meteo==="pluie"){
+    console.log("Sortez en blouson.")
+} else if (meteo==="neige"){
+    console.log("Restez au chaud à la maison.")
+} else {
+    console.log("idk")
+}

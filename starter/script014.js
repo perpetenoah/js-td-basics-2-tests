@@ -36,3 +36,62 @@
 // 2. Calculez leur BMI et affichez, selon le cas, "Le BMI de Mark est plus élevé que celui de John" ou "Le BMI de John est plus élevé que celui de Mark"
 
 // Écrire un programme qui teste si un nombre entré par l’utilisateur est pair ou impair.
+
+
+
+
+
+
+
+
+
+if (1===1){
+    console.log("Je suis dans un bloc d'instructions soumis à une condition qui est toujours vraie, je vais donc toujours m'afficher");
+}
+if (2===1){
+    console.log("Bon, je cause toujours, mais vu que je suis dans un bloc d'instructions soumis à une condition qui est toujours fausse, ce que je dis ne va jamais s'afficher");
+}
+const nombre = parseInt(prompt("Donnes moi un nombre"));
+if (nombre>=0){
+    console.log("Est positif");
+} else {
+    console.log("Est négatif")
+}
+let poli = prompt("Bonjour");
+if (poli==="Bonjour"){
+    let name = prompt("Toi, tu es poli, tu me dis bonjour, je veux bien te parler… Comment t'appelles-tu ?")
+    if (name !==""){
+        console.log(`"Je t'aime bien, ${name}"`)
+    } else {
+        console.log("Bah tu ne m'as pas donné ton nom");
+    }
+}
+
+const firstName = "John";
+const civilStatus = prompt("single or married ?");
+let isMarried;
+
+if (civilStatus==="married"){
+    isMarried = true
+    console.log("John est marié !");
+} else {
+    console.log("John va, on l'espère, bientôt se marier :)");
+}
+
+const pJohn =78;
+const pMark =92;
+const tJohn =1.69;
+const tmark =1.95;
+
+bmiJohn=pJohn/(tJohn*tJohn);
+bmiMark=pMark/(tmark*tmark);
+
+let isMarkIsBiggerThanJohn = bmiMark>bmiJohn;
+
+if (isMarkIsBiggerThanJohn===true){
+    console.log("Le BMI de Mark est plus élevé que celui de John");
+} else {
+    console.log("Le BMI de John est plus élevé que celui de Mark");
+}
+
+

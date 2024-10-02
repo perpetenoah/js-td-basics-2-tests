@@ -17,3 +17,22 @@
 // Exemple : si le jour actuel est "mardi", le programme devrait afficher "Demain, nous serons mercredi."
 
 // N'oubliez pas de tester votre programme avec divers jours de la semaine.
+
+
+const nomDuJour ="lundi";
+
+if (nomDuJour==="lundi"){
+    console.log("Le jour suivant est mardi");
+} else if (nomDuJour==="mardi"){
+    console.log("Le jours suivant est mercredi");
+} else if (nomDuJour==="mercredi"){
+    console.log("Le jours suivant est jeudi");
+} else if (nomDuJour==="jeudi"){
+    console.log("Le jours suivant est vendredi");
+} else if (nomDuJour==="vendredi"){
+    console.log("Le jours suivant est samedi");
+} else if (nomDuJour==="samedi"){
+    console.log("Le jours suivant est dimanche");
+} else if (nomDuJour==="dimanche"){
+    console.log("Le jours suivant est lundi");
+}
