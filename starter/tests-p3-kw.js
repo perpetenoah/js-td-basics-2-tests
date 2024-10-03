@@ -26,3 +26,36 @@ Valeurs de test :
 // 4. Calculez le coût de cette tranche (KW dans la tranche * 25 centimes) et ajoutez-le à cost.
 // 5. Répétez les étapes 3 et 4 pour les tranches de 31 à 50 KW (20 centimes), de 51 à 70 KW (15 centimes), et les KW restants (10 centimes).
 // 6. Affichez le coût total (cost) en euros dans la console.
+
+
+
+let kw=parseInt(prompt("Combien de KW a tu consommés ?"));
+let cost;
+const step1=30*25; //750
+const step2=20*20; //400
+const step3=20*15; //300
+
+if (kw>70){
+    kw=kw-70;
+    cost=(step1+step2+step3+(kw*10))/100;
+    console.log(`Le coût total est de ${cost}€`);
+} else if (kw>50 && kw<=70){
+    kw=kw-50;
+    cost=(step1+step2+(kw*15))/100;
+    console.log(`Le coût total est de ${cost}€`);
+} else if (kw>30 && kw<=50){
+    kw=kw-30;
+    cost=(step1+(kw*20))/100;
+    console.log(`Le coût total est de ${cost}€`);
+} else {
+    cost=(kw*25)/100;
+    console.log(`Le coût total est de ${cost}€`);
+}
+
+
+//85KW
+//
+// 30KW * 25
+// 31-50 = 20 KW *20
+// 51-70 = 20 KW *15
+// 71-85 = 15 KW *10

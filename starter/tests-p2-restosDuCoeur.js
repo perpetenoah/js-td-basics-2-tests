@@ -26,3 +26,29 @@ Tester avec des montants d'achat de
 //       Assurez-vous que le montant versé aux restos du cœur ne dépasse pas 2€ (utilisez Math.min(2, montant versé)).
 //    b) Si la condition est fausse, la somme versée aux restos du cœur est de 0€.
 // 4. Affichez la somme versée aux restos du cœur dans la console.
+
+
+
+let prixTotal = parseInt(prompt("Quel est le prix total ?"));
+let remise;
+let restoDuCoeur;
+
+if (prixTotal>25){
+    remise=prixTotal*0.1;
+    if (remise>5){
+        restoDuCoeur=remise*0.1;
+        if (restoDuCoeur<2){
+            console.log(`Les restos du coeur recevront ${restoDuCoeur}€`);
+        }
+    }
+}
+
+
+
+//if (prixTotal>25){
+//     remise=prixTotal*0.1;
+// } else if (remise>5){
+//     restoDuCoeur=remise*0.1;
+// } else if (restoDuCoeur<2){
+//     console.log(`Les restos du coeur recevront ${restoDuCoeur}€`);
+// }
